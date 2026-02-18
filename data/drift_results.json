@@ -1,0 +1,20 @@
+{
+  "confidence_drift": {
+    "mean_confidence": 0.9999224555492401,
+    "std_confidence": 1.6474620305355846e-07,
+    "threshold": 0.85,
+    "drift_detected": false
+  },
+  "accuracy_drift": {
+    "rolling_accuracy": 1.0,
+    "baseline_accuracy": 1.0,
+    "drop": 0.0,
+    "drift_detected": false
+  },
+  "timestamp": "2026-02-17T21:48:58.630691",
+  "predictions_analyzed": 100,
+  "distribution_drift": {
+    "new_categories": [],
+    "surging_categories": []
+  }
+}

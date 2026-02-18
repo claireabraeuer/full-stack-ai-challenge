@@ -1,0 +1,91 @@
+{
+  "total_features": 514,
+  "top_20_features": [
+    {
+      "feature": "text__authentication",
+      "importance": 0.20000027120113373
+    },
+    {
+      "feature": "text__accessed",
+      "importance": 0.20000013709068298
+    },
+    {
+      "feature": "text__add",
+      "importance": 0.2000001221895218
+    },
+    {
+      "feature": "text__additional",
+      "importance": 0.20000000298023224
+    },
+    {
+      "feature": "text__operations",
+      "importance": 0.19999951124191284
+    },
+    {
+      "feature": "text__pricing",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__performance",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__performance degradation",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__persists",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__persists team",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__pro",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__pricing upgrade",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__perform",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__pro allows",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__pro authentication",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__pro datasync",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__pro getting",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__pro like",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__perform standard",
+      "importance": 0.0
+    },
+    {
+      "feature": "text__past",
+      "importance": 0.0
+    }
+  ],
+  "feature_type_summary": {
+    "tfidf_features": 0,
+    "categorical_features": 20,
+    "numerical_features": 4,
+    "boolean_features": 3
+  }
+}

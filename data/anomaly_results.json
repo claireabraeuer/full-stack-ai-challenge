@@ -1,0 +1,125 @@
+{
+  "volume_anomalies": {
+    "anomalies": [],
+    "total_flagged": 0
+  },
+  "new_categories": {
+    "new_categories": [],
+    "surging_categories": [],
+    "baseline_period_days": 30,
+    "recent_period_days": 7
+  },
+  "sentiment_shifts": {
+    "sentiment_delta": -0.004737035638910592,
+    "satisfaction_delta": 0.07186367368276736,
+    "sentiment_anomaly": false,
+    "satisfaction_anomaly": false,
+    "recent_sentiment_avg": -0.5245673261393129,
+    "recent_satisfaction_avg": 3.1891417854281343,
+    "prior_sentiment_avg": -0.5198302905004023,
+    "prior_satisfaction_avg": 3.117278111745367
+  },
+  "emerging_problems": [
+    {
+      "product": "API Gateway",
+      "category": "Account Management",
+      "ticket_count": 45,
+      "escalation_rate": 0.4222222222222222,
+      "bug_rate": 0.1111111111111111,
+      "avg_similar_issues": 118.24444444444444,
+      "avg_affected_users": 292.1111111111111,
+      "anomaly_score": 0.5916666666666667
+    },
+    {
+      "product": "Analytics Dashboard",
+      "category": "Account Management",
+      "ticket_count": 51,
+      "escalation_rate": 0.37254901960784315,
+      "bug_rate": 0.0392156862745098,
+      "avg_similar_issues": 135.07843137254903,
+      "avg_affected_users": 286.1764705882353,
+      "anomaly_score": 0.5890522875816993
+    },
+    {
+      "product": "CloudBackup Enterprise",
+      "category": "Account Management",
+      "ticket_count": 54,
+      "escalation_rate": 0.3148148148148148,
+      "bug_rate": 0.037037037037037035,
+      "avg_similar_issues": 148.2962962962963,
+      "avg_affected_users": 144.1851851851852,
+      "anomaly_score": 0.587962962962963
+    },
+    {
+      "product": "DataSync Pro",
+      "category": "Security",
+      "ticket_count": 48,
+      "escalation_rate": 0.375,
+      "bug_rate": 0.041666666666666664,
+      "avg_similar_issues": 116.85416666666667,
+      "avg_affected_users": 306.7291666666667,
+      "anomaly_score": 0.5763888888888888
+    },
+    {
+      "product": "StreamProcessor",
+      "category": "Account Management",
+      "ticket_count": 40,
+      "escalation_rate": 0.475,
+      "bug_rate": 0.05,
+      "avg_similar_issues": 133.55,
+      "avg_affected_users": 254.675,
+      "anomaly_score": 0.5664351851851852
+    },
+    {
+      "product": "DataSync Pro",
+      "category": "Technical Issue",
+      "ticket_count": 47,
+      "escalation_rate": 0.3404255319148936,
+      "bug_rate": 0.0425531914893617,
+      "avg_similar_issues": 123.02127659574468,
+      "avg_affected_users": 309.25531914893617,
+      "anomaly_score": 0.5633372734436564
+    },
+    {
+      "product": "DataSync Pro",
+      "category": "Data Issue",
+      "ticket_count": 43,
+      "escalation_rate": 0.4186046511627907,
+      "bug_rate": 0.023255813953488372,
+      "avg_similar_issues": 114.23255813953489,
+      "avg_affected_users": 265.6511627906977,
+      "anomaly_score": 0.5595391903531438
+    },
+    {
+      "product": "DataSync Pro",
+      "category": "Account Management",
+      "ticket_count": 37,
+      "escalation_rate": 0.4864864864864865,
+      "bug_rate": 0.02702702702702703,
+      "avg_similar_issues": 119.48648648648648,
+      "avg_affected_users": 271.2432432432432,
+      "anomaly_score": 0.5496746746746747
+    },
+    {
+      "product": "CloudBackup Enterprise",
+      "category": "Feature Request",
+      "ticket_count": 43,
+      "escalation_rate": 0.3023255813953488,
+      "bug_rate": 0.09302325581395349,
+      "avg_similar_issues": 112.30232558139535,
+      "avg_affected_users": 262.3720930232558,
+      "anomaly_score": 0.5479112833763997
+    },
+    {
+      "product": "API Gateway",
+      "category": "Security",
+      "ticket_count": 45,
+      "escalation_rate": 0.3333333333333333,
+      "bug_rate": 0.022222222222222223,
+      "avg_similar_issues": 159.04444444444445,
+      "avg_affected_users": 245.7111111111111,
+      "anomaly_score": 0.5472222222222223
+    }
+  ],
+  "timestamp": "2026-02-17T21:21:53.581287"
+}

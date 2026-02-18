@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Environment variables
+.env
+.env.local
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Model artifacts
+models/*.pkl
+models/*.h5
+models/*.pb
+models/*.ckpt
+*.joblib
+
+# Data (except sample data)
+data/raw/*
+data/processed/*
+data/splits/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/splits/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# DVC
+.dvc/tmp/
+.dvc/cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Feast
+feature_repo/
+feast_registry.db
+
+# ChromaDB
+chroma_db/
+data/chroma_db/
+
+# Large local artifacts not suitable for GitHub
+support_tickets.json
+mlflow.db
+
+# Docker
+*.dockerignore

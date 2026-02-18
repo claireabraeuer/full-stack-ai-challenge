@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  # Main API server
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: support-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount data directory for persistence
+      - ./data:/app/data
+      # Mount models directory for persistence
+      - ./models:/app/models
+      # Mount MLflow tracking directory
+      - ./mlruns:/app/mlruns
+    environment:
+      - MLFLOW_TRACKING_URI=file:///app/mlruns
+      - LOG_LEVEL=INFO
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    networks:
+      - support-network
+
+  # MLflow tracking server (optional - for experiment tracking UI)
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.10.2
+    container_name: mlflow-server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlruns
+    command: >
+      mlflow server
+      --backend-store-uri file:///mlruns
+      --default-artifact-root file:///mlruns
+      --host 0.0.0.0
+      --port 5000
+    restart: unless-stopped
+    networks:
+      - support-network
+
+  # Prometheus (optional - for metrics monitoring)
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    restart: unless-stopped
+    networks:
+      - support-network
+
+networks:
+  support-network:
+    driver: bridge
+
+volumes:
+  prometheus-data:

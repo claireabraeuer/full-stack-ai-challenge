@@ -1,0 +1,26 @@
+# Prometheus configuration for monitoring the API
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: 'support-system'
+    replica: 'prometheus-1'
+
+# Scrape configurations
+scrape_configs:
+  # Scrape metrics from the API server
+  - job_name: 'support-api'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['api:8000']
+        labels:
+          service: 'api'
+          environment: 'production'
+
+  # Scrape Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+        labels:
+          service: 'prometheus'
